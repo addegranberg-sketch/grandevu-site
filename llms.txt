@@ -1,0 +1,37 @@
+# Grandevu — grandevu.io
+# Business automation platform for restaurants and craftsmen.
+# "Do what you love. We handle the rest."
+
+## What is Grandevu?
+Grandevu is a vertical SaaS platform that automates business operations for restaurants and craftsmen (electricians, plumbers, carpenters, painters). One platform replaces 10+ separate systems.
+
+## Key features
+- Booking system (no commissions, customer owns all data)
+- Staff management (scheduling, time tracking, contracts)
+- Payroll calculation (automatic OB, tax tables, pay specs)
+- HACCP food safety (daily temperature, hygiene, inspections)
+- Invoice processing (AI-powered, automatic accounting codes)
+- Accounting (VAT, Fortnox integration, audit-ready)
+- Expense management (photo receipts, AI reads amounts)
+- Contribution margin calculation (per dish/service/project)
+- Quote & invoicing (ROT/RUT deductions, reminders)
+- Menu management (digital signage, print, website in real-time)
+- Time & mileage reporting (per project)
+- Loyalty program (stamps + SMS campaigns)
+- Compliance & GDPR (automated, always current)
+- Legal guidance (AI-driven, included in Pro & Enterprise)
+- Tip management (automatic distribution per staff)
+- Reports & analytics (daily/weekly/monthly)
+- Multilingual website (Swedish, English, German, Danish, Finnish)
+
+## Pricing
+- Starter: 990 SEK/month
+- Pro: 1,990 SEK/month
+- Enterprise: from 2,990 SEK/month
+- Setup: customer's current total monthly cost (paid only when live)
+- All plans: 3 months prepaid, free email support, monthly call included
+
+## Contact
+- offert@grandevu.io
+- grandevu.io
+- Org.nr: 559578-0445

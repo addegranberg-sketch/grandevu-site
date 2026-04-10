@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Sitemap: https://grandevu.io/sitemap.xml
+
+User-agent: GPTBot
+Allow: /llms.txt
+
+User-agent: ChatGPT-User
+Allow: /llms.txt
+
+User-agent: Claude-Web
+Allow: /llms.txt
+
+User-agent: Anthropic-AI
+Allow: /llms.txt

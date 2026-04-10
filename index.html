@@ -2,10 +2,33 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Grandevu — Gör det du älskar. Vi automatiserar resten. Bokningar, personal, löner, fakturor, redovisning, compliance.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Grandevu — Gör det du älskar. Vi automatiserar bokningar, personal, löner, fakturor, redovisning, HACCP och compliance för restauranger och hantverkare.">
+  <meta name="keywords" content="bokningssystem restaurang, personalhantering, löneberäkning, HACCP, fakturagranskning, redovisning, hantverkare bokningssystem, SaaS restaurang, affärsautomation">
   <meta name="robots" content="index, follow">
-  <title>Grandevu — Do what you love.</title>
+  <meta name="author" content="Grandevu">
+  <meta name="theme-color" content="#1a1a2e">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Grandevu — Do what you love.">
+  <meta property="og:description" content="Vi automatiserar bokningar, personal, löner, fakturor, redovisning och compliance — så att du kan fokusera på det du brinner för.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://grandevu.io">
+  <meta property="og:site_name" content="Grandevu">
+  <meta property="og:locale" content="sv_SE">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Grandevu — Do what you love.">
+  <meta name="twitter:description" content="Affärsautomation för restauranger och hantverkare. Bokningar, personal, löner, redovisning — allt i en plattform.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://grandevu.io">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' rx='16' fill='%231a1a2e'/%3E%3Ccircle cx='40' cy='40' r='24' fill='none' stroke='%23c4a35a' stroke-width='3'/%3E%3C/svg%3E">
+
+  <title>Grandevu — Do what you love. | Bokningssystem &amp; affärsautomation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,12 +50,22 @@
       <text x="115" y="62" font-family="Georgia,serif" font-size="42" font-weight="400" letter-spacing="6" fill="#f0ece2"><tspan>GRAND</tspan><tspan fill="#c4a35a">EVU</tspan></text>
     </svg>
   </div>
-  <ul class="nav-links">
-    <li><a href="#funktioner">Funktioner</a></li>
-    <li><a href="#process">Så fungerar det</a></li>
-    <li><a href="#priser">Priser</a></li>
-    <li><a href="#demo" class="nav-cta">Boka demo</a></li>
-  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="sv" onclick="setLang('sv')" title="Svenska">&#127480;&#127466;</button>
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')" title="English">&#127468;&#127463;</button>
+      <button class="lang-btn" data-lang="de" onclick="setLang('de')" title="Deutsch">&#127465;&#127466;</button>
+      <button class="lang-btn" data-lang="da" onclick="setLang('da')" title="Dansk">&#127465;&#127472;</button>
+      <button class="lang-btn" data-lang="fi" onclick="setLang('fi')" title="Suomi">&#127467;&#127470;</button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#funktioner">Funktioner</a></li>
+      <li><a href="#process">Så fungerar det</a></li>
+      <li><a href="#priser">Priser</a></li>
+      <li><a href="#demo" class="nav-cta">Boka demo</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Meny">&#9776;</button>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -121,6 +154,14 @@
     <div class="feature-card reveal">
       <h3>Offert &amp; Fakturering</h3>
       <p>Skapa offerter, skicka digitalt, konvertera till faktura. ROT/RUT-avdrag. Påminnelser vid utebliven betalning.</p>
+    </div>
+    <div class="feature-card reveal">
+      <h3>Menyhantering</h3>
+      <p>Uppdatera menyn en gång — synkroniseras i realtid till hemsida, digitala skyltar och print. Flerspråkigt.</p>
+    </div>
+    <div class="feature-card reveal">
+      <h3>Tid &amp; Milrapportering</h3>
+      <p>Personal rapporterar tid och mil direkt på projekt. Automatisk koppling till lön, faktura och kostnadsuppföljning.</p>
     </div>
     <div class="feature-card reveal">
       <h3>HACCP — Miljö &amp; Hälsa</h3>
@@ -258,13 +299,138 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-left">
-    © 2026 Grandevu · offert@grandevu.io
+    &copy; 2026 Grandevu AB (559578-0445) &middot; offert@grandevu.io
   </div>
   <div class="footer-tagline">Do what you love.</div>
 </footer>
 
-<!-- SCRIPT -->
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Grandevu",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Affärsautomationsplattform för restauranger och hantverkare. Bokningar, personal, löner, fakturor, redovisning, HACCP, compliance — allt i en plattform.",
+  "url": "https://grandevu.io",
+  "provider": {
+    "@type": "Organization",
+    "name": "Grandevu AB",
+    "url": "https://grandevu.io",
+    "email": "offert@grandevu.io",
+    "foundingDate": "2026-04-10",
+    "slogan": "Do what you love."
+  },
+  "offers": [
+    { "@type": "Offer", "name": "Starter", "price": "990", "priceCurrency": "SEK", "priceSpecification": { "@type": "UnitPriceSpecification", "billingIncrement": "month" }},
+    { "@type": "Offer", "name": "Pro", "price": "1990", "priceCurrency": "SEK", "priceSpecification": { "@type": "UnitPriceSpecification", "billingIncrement": "month" }},
+    { "@type": "Offer", "name": "Enterprise", "price": "2990", "priceCurrency": "SEK", "priceSpecification": { "@type": "UnitPriceSpecification", "billingIncrement": "month" }}
+  ],
+  "featureList": ["Bokningssystem", "Personalhantering", "Löneberäkning", "HACCP", "Fakturagranskning", "Kontering", "Utläggshantering", "Redovisning", "TB-kalkyl", "Offert & Fakturering", "Drickshantering", "Lojalitetsprogram", "Compliance & GDPR", "Juridisk rådgivning", "Rapporter", "Hemsida"]
+}
+</script>
+
+<!-- LANGUAGE SWITCHER + MOBILE NAV + SCRIPT -->
 <script>
+// Translations
+const T = {
+  sv: {
+    hero: 'Do what you <em>love.</em>',
+    heroSub: 'Vi automatiserar resten — bokningar, personal, löner, fakturor, redovisning, compliance, juridik — så att du kan fokusera på det du brinner för.',
+    heroCta: 'Se hur det ser ut för dig',
+    scroll: 'Scrolla',
+    nav: { features: 'Funktioner', process: 'Så fungerar det', pricing: 'Priser', demo: 'Boka demo' },
+    statement: 'Varje dag sliter företagare med det de <em>inte</em> brinner för. Bokningar, löner, fakturor, redovisning, compliance.<br><br>Vi tar hand om allt det. <em>Automatiskt.</em>',
+    ownershipLabel: 'Den viktigaste skillnaden',
+    ownershipTitle: 'All data är er.',
+    ownershipText: 'Ingen tredje part skickar mail till era gäster eller kunder. Ingen äger era bokningar. Er domän, er databas, er kod. Bara ni.',
+  },
+  en: {
+    hero: 'Do what you <em>love.</em>',
+    heroSub: 'We automate the rest — bookings, staff, payroll, invoices, accounting, compliance, legal — so you can focus on what you love.',
+    heroCta: 'See what it looks like for you',
+    scroll: 'Scroll',
+    nav: { features: 'Features', process: 'How it works', pricing: 'Pricing', demo: 'Book demo' },
+    statement: 'Every day, business owners struggle with the things they <em>don\'t</em> love. Bookings, payroll, invoices, accounting, compliance.<br><br>We handle all of it. <em>Automatically.</em>',
+    ownershipLabel: 'The most important difference',
+    ownershipTitle: 'All data is yours.',
+    ownershipText: 'No third party sends emails to your guests or customers. No one owns your bookings. Your domain, your database, your code. Just you.',
+  },
+  de: {
+    hero: 'Tu was du <em>liebst.</em>',
+    heroSub: 'Wir automatisieren den Rest — Buchungen, Personal, Gehälter, Rechnungen, Buchhaltung, Compliance, Recht — damit Sie sich auf das konzentrieren können, was Sie lieben.',
+    heroCta: 'Sehen Sie, wie es für Sie aussieht',
+    scroll: 'Scrollen',
+    nav: { features: 'Funktionen', process: 'So funktioniert es', pricing: 'Preise', demo: 'Demo buchen' },
+    statement: 'Jeden Tag kämpfen Unternehmer mit Dingen, die sie <em>nicht</em> lieben. Buchungen, Gehälter, Rechnungen, Buchhaltung, Compliance.<br><br>Wir kümmern uns um alles. <em>Automatisch.</em>',
+    ownershipLabel: 'Der wichtigste Unterschied',
+    ownershipTitle: 'Alle Daten gehören Ihnen.',
+    ownershipText: 'Kein Dritter sendet E-Mails an Ihre Gäste oder Kunden. Niemand besitzt Ihre Buchungen. Ihre Domain, Ihre Datenbank, Ihr Code. Nur Sie.',
+  },
+  da: {
+    hero: 'Gør det du <em>elsker.</em>',
+    heroSub: 'Vi automatiserer resten — bookinger, personale, løn, fakturaer, regnskab, compliance, jura — så du kan fokusere på det du brænder for.',
+    heroCta: 'Se hvordan det ser ud for dig',
+    scroll: 'Scroll',
+    nav: { features: 'Funktioner', process: 'Sådan virker det', pricing: 'Priser', demo: 'Book demo' },
+    statement: 'Hver dag kæmper virksomhedsejere med det de <em>ikke</em> brænder for. Bookinger, løn, fakturaer, regnskab, compliance.<br><br>Vi tager os af det hele. <em>Automatisk.</em>',
+    ownershipLabel: 'Den vigtigste forskel',
+    ownershipTitle: 'Alle data er jeres.',
+    ownershipText: 'Ingen tredjepart sender mails til jeres gæster eller kunder. Ingen ejer jeres bookinger. Jeres domæne, jeres database, jeres kode. Kun jer.',
+  },
+  fi: {
+    hero: 'Tee sitä mitä <em>rakastat.</em>',
+    heroSub: 'Me automatisoimme loput — varaukset, henkilöstö, palkat, laskut, kirjanpito, vaatimustenmukaisuus, laki — jotta voit keskittyä siihen, mitä rakastat.',
+    heroCta: 'Katso miltä se näyttää sinulle',
+    scroll: 'Vieritä',
+    nav: { features: 'Ominaisuudet', process: 'Näin se toimii', pricing: 'Hinnat', demo: 'Varaa demo' },
+    statement: 'Joka päivä yrittäjät kamppailevat asioiden kanssa, joita he <em>eivät</em> rakasta. Varaukset, palkat, laskut, kirjanpito, vaatimustenmukaisuus.<br><br>Me hoidamme kaiken. <em>Automaattisesti.</em>',
+    ownershipLabel: 'Tärkein ero',
+    ownershipTitle: 'Kaikki data on teidän.',
+    ownershipText: 'Mikään kolmas osapuoli ei lähetä sähköpostia vieraillenne tai asiakkaillenne. Kukaan ei omista varauksianne. Teidän verkkotunnus, teidän tietokanta, teidän koodi. Vain te.',
+  }
+};
+
+let currentLang = 'sv';
+
+function setLang(lang) {
+  currentLang = lang;
+  const t = T[lang];
+  if (!t) return;
+  // Update hero
+  const h1 = document.querySelector('.hero h1');
+  if (h1) h1.innerHTML = t.hero;
+  const sub = document.querySelector('.hero-sub');
+  if (sub) sub.innerHTML = t.heroSub;
+  const cta = document.querySelector('.hero-cta');
+  if (cta) cta.textContent = t.heroCta;
+  const scroll = document.querySelector('.hero-scroll');
+  if (scroll) scroll.childNodes[0].textContent = t.scroll;
+  // Statement
+  const stmt = document.querySelector('.statement h2');
+  if (stmt) stmt.innerHTML = t.statement;
+  // Ownership
+  const owL = document.querySelector('.ownership .section-label');
+  if (owL) owL.textContent = t.ownershipLabel;
+  const owT = document.querySelector('.ownership h2');
+  if (owT) owT.textContent = t.ownershipTitle;
+  const owP = document.querySelector('.ownership p');
+  if (owP) owP.textContent = t.ownershipText;
+  // Nav
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    if (a.getAttribute('href') === '#funktioner') a.textContent = t.nav.features;
+    if (a.getAttribute('href') === '#process') a.textContent = t.nav.process;
+    if (a.getAttribute('href') === '#priser') a.textContent = t.nav.pricing;
+    if (a.classList.contains('nav-cta')) a.textContent = t.nav.demo;
+  });
+  // Update active flag
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+  document.documentElement.lang = lang;
+}
+
 // Nav scroll effect
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
@@ -280,8 +446,12 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.1 });
-
 reveals.forEach(el => observer.observe(el));
+
+// Mobile menu
+function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('open');
+}
 </script>
 
 </body>
