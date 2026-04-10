@@ -106,15 +106,22 @@ nav.scrolled {
 .lang-btn {
   background: none;
   border: 1px solid transparent;
-  font-size: 1.2rem;
   cursor: pointer;
-  padding: 4px 6px;
-  border-radius: 4px;
+  padding: 3px;
+  border-radius: 3px;
   transition: all 0.3s;
   opacity: 0.5;
+  line-height: 0;
 }
 
-.lang-btn:hover { opacity: 0.8; }
+.lang-btn svg {
+  width: 24px;
+  height: 15px;
+  border-radius: 2px;
+  display: block;
+}
+
+.lang-btn:hover { opacity: 0.85; }
 .lang-btn.active { opacity: 1; border-color: var(--gold); }
 
 .hamburger {
